@@ -1,2 +1,49 @@
-@import "_default";
-@import "_fonts";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Helpers
+// @import "helpers/_variables";
+// @import "helpers/_mixins";
+
+// Vendor (Вендорные стили. Например от плагинов)
+// @import "../../node_modules/slick-carousel/slick/slick.scss";
+
+// Common (основные стили.)
+@import "common/default";
+@import "common/fonts";
+
+// // Components (мелкие визуальные элементы)
+@import "components/buttons";
+@import "components/icon";
+@import "components/breadcrumb";
+@import "components/horizontalNav";
+@import "components/pagination";
+// @import "components/forms";
+// @import "components/loader";
+// @import "components/table";
+
+// // Modules (большие куски. Шапка, футер, продукт)
+// @import "modules/footer";
+// @import "modules/header";
+// @import "modules/main-slider";
+// @import "modules/navbar";
+// @import "modules/section";
+// @import "modules/services";
+
+// // Pages (стили, котрые нужно применить для конкретной страницы)
+// @import "pages/index";
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.bg {
+  &-primary {
+    background-color: $primary;
+  }
+
+  &-variant2 {
+    background-color: $variant2;
+  }
+}

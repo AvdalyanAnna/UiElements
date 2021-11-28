@@ -1,0 +1,19 @@
+.breadcrumb {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: $main;
+  display: flex;
+  margin: 10px;
+  svg.icon {
+    fill: $main;
+    width: 8px;
+    height: 12px;
+    margin: 0 10px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

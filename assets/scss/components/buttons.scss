@@ -1,0 +1,203 @@
+.btn {
+  border: none;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 25px;
+  cursor: pointer;
+  position: relative;
+  &-small {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 8px 17px;
+    .icon-plus {
+      width: 11px;
+      height: 13px;
+      margin-right: 8px;
+    }
+    .icon-next {
+      width: 8px;
+      height: 13px;
+      margin-left: 9px;
+      margin-right: 3px;
+    }
+  }
+  &-large {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 12px 27px;
+  }
+  &-primary {
+    background-color: $primary;
+    color: $white;
+  }
+  &-white {
+    background-color: $white;
+    color: $primary;
+    svg.icon {
+      fill: $primary;
+    }
+  }
+  &-light {
+    background-color: $light;
+    color: $primary;
+    svg.icon {
+      fill: $primary;
+    }
+  }
+  &-outline {
+    &-primary {
+      border: 1px solid $primary;
+      color: $primary;
+      background-color: $white;
+      svg.icon {
+        fill: $primary;
+      }
+    }
+    &-white {
+      border: 1px solid $white;
+      color: $white;
+      background-color: transparent;
+    }
+  }
+
+  &-social {
+    max-width: 36px;
+    width: 100%;
+    height: 36px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+    svg.icon {
+      width: 10px;
+      height: 19px;
+    }
+    &-large {
+      max-width: 48px;
+      height: 48px;
+      svg.icon {
+        width: 14px;
+        height: 25px;
+      }
+    }
+    &-small {
+      max-width: 24px;
+      height: 24px;
+      svg.icon {
+        width: 8px;
+        height: 12px;
+      }
+    }
+  }
+  &-player {
+    max-width: 78px;
+    width: 100%;
+    height: 78px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+  }
+  &-badge {
+    border-radius: 50px;
+    padding: 4px 20px;
+  }
+  &-link {
+    background-color: transparent;
+    color: $primary;
+    svg.icon {
+      fill: $primary;
+    }
+    &-white {
+      background-color: transparent;
+      color: $white;
+      svg.icon {
+        fill: $white;
+      }
+    }
+  }
+  &-tooltip {
+    border-width: 3px;
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-weight: 400;
+    &.btn-primary {
+      border: 3px solid $primary;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      left: 50%;
+      top: -4px;
+      background: $primary;
+      transform: rotate(45deg) translateX(-50%);
+      z-index: -1;
+      border-radius: 2px;
+    }
+    &-top {
+      &::before {
+        left: 50%;
+        top: -4px;
+        transform: rotate(45deg) translateX(-50%);
+      }
+    }
+    &-left {
+      &::before {
+        left: -10px;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+      }
+    }
+    &-bottom {
+      &::before {
+        left: 50%;
+        bottom: -11px;
+        top: auto;
+        transform: rotate(45deg) translateX(-50%);
+      }
+    }
+    &-right {
+      &::before {
+        left: auto;
+        right: -3px;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+      }
+    }
+  }
+  &-group {
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    max-width: 473px;
+    width: 100%;
+    margin: 0 auto 10px;
+    button.btn {
+      margin: 0;
+      border-radius: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+    }
+  }
+  .icon-plus {
+    margin-right: 12px;
+  }
+  .icon-next {
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,33 @@
+.icon {
+  &.white {
+    fill: $white;
+  }
+  &-plus {
+    width: 16px;
+    height: 17px;
+  }
+  &-next {
+    width: 10px;
+    height: 17px;
+  }
+  &-fb{
+    width: 14px;
+    height: 25px;
+  }
+  &-player{
+    width: 23px;
+    height: 26px;
+  }
+  &-home{
+    width: 28px;
+    height: 21px;
+  }
+  &-inactive{
+    width: 24px;
+    height: 25px;
+  }
+  &-user{
+    width: 22px;
+    height: 25px;
+  }
+}
